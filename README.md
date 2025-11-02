@@ -1,0 +1,1 @@
+# missao-ia-Melhorada-Tamiris-2025

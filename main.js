@@ -46,12 +46,14 @@ function mostraResultado() {
     caixaPerguntas.textContent = "Se fosse possível traduzir sua forma de aprender em palavras, diríamos que...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-    botaoJogarNovamente.addEventListener("click", jogaNovamente());
+    caixaResultado.classList.add("mostrar");
+    botaoJogarNovamente.addEventListener("click", jogaNovamente);
 }
 
 function jogaNovamente(){
     atual = 0;
     historiaFinal = "";
+    caixaResultado.classList.remove("mostrar");
     mostraPergunta();
 }
 
